@@ -31,7 +31,7 @@ export default function Home() {
             <Button
               type='button'
               onClick={handleJoin}
-              className='bg-black active:bg-black/90 rounded-md w-[200px] text-center font-base font-medium p-4 text-white transition-all duration-300 active:scale-95'
+              className='bg-black active:bg-black/90 rounded-md w-[100px] md:w-[200px] text-center text-base font-medium p-2 md:p-4 text-white transition-all duration-300 active:scale-95'
               loading={loading}
             >
               Join em?
@@ -39,6 +39,7 @@ export default function Home() {
           </fieldset>
         </form>
       </main>
+      .
       <ToastContainer />
     </>
   );
