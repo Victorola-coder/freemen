@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { GeistSans } from 'geist/font/sans';
+import Navbar from '@/components/navbar';
 // import { GeistMono } from 'geist/font/mono';
 
 export const metadata: Metadata = {
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={GeistSans.className}>{children}</body>
+      <body className={GeistSans.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -21,8 +21,8 @@ export default function Home() {
   }
   return (
     <>
-      <main className='flex h-screen flex-col items-center justify-center gap-5'>
-        <h1 className='font-bold text-4xl'>
+      <main className='flex flex-col h-[90vh] items-center justify-center gap-3 md:gap-5'>
+        <h1 className='font-bold text-base md:text-4xl'>
           where chad men live and strives!!!
         </h1>
         <form onSubmit={handleSubmit}>
@@ -31,7 +31,7 @@ export default function Home() {
             <Button
               type='button'
               onClick={handleJoin}
-              className='bg-black rounded-md w-[200px] text-center font-base font-medium p-4 text-white transition-all duration-300 active:scale-95'
+              className='bg-black hover:bg-black/70 rounded-md w-[200px] text-center font-base font-medium p-4 text-white transition-all duration-300 active:scale-95'
               loading={loading}
             >
               Join em?
