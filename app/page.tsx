@@ -1,9 +1,9 @@
 'use client';
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Button from '@/components/button';
 import { useState } from 'react';
+import Button from '@/components/button';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Home() {
   const [loading, isLoading] = useState(false);
@@ -26,6 +26,12 @@ export default function Home() {
         <h1 className='font-bold text-2xl md:text-4xl'>
           where chad men live and strives!!!
         </h1>
+        <p className="text-center block mx-auto max-w-xl text-[#141517] text-base lg:text-[18px] lg:max-w-3xl">
+        One day freemen go launch as an exclusive brotherhood like bluxies 
+
+Connected by tech, bonded by love
+Building tech campaigns, community, products, projects that would bring forth economic growth and also benefit each other 
+Giving to the community and creating an opportunity for raising productive high value men who would be a change and blessing to the world</p>
         <form onSubmit={handleSubmit}>
           <fieldset>
             {' '}
