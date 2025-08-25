@@ -1,12 +1,12 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { GeistSans } from 'geist/font/sans';
-import Navbar from '@/components/navbar';
+import "./globals.css";
+import type { Metadata } from "next";
+import Navbar from "@/components/navbar";
+import { GeistSans } from "geist/font/sans";
 // import { GeistMono } from 'geist/font/mono';
 
 export const metadata: Metadata = {
-  title: 'Freemen || Kok suckers',
-  description: 'where chad man live and strives!!!',
+  title: "Freemen || Kok suckers",
+  description: "where chad man live and strives!!!",
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={GeistSans.className}>
         <Navbar />
         {children}
